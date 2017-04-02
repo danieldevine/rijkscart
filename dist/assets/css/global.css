@@ -1,0 +1,59 @@
+/* target the ipad to fight against fixed position scroll weirdness */
+/*Typography*/
+@import url("https://fonts.googleapis.com/css?family=Assistant:300,400,600,700|Roboto:700,900i");
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+html {
+  overflow-x: hidden;
+  font-size: 20px;
+  font-weight: 300; }
+
+body {
+  font-family: "Assistant", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+  height: 100% !important;
+  margin: 0 auto;
+  color: #444651;
+  background: #444651; }
+
+a {
+  transition: all .3s ease;
+  text-decoration: none;
+  color: inherit;
+  outline: 0 !important; }
+  a:hover {
+    text-decoration: underline; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    padding: 0; }
+
+.wrapper {
+  position: relative;
+  max-width: 1170px;
+  min-height: 100%;
+  margin: 0 auto; }
+  @media (max-height: 768px), (max-width: 1366px) {
+    .wrapper {
+      max-width: 90%; } }
+  @media (max-width: 1023px) {
+    .wrapper {
+      max-width: 90%; } }
+  .wrapper img {
+    max-width: 100%;
+    height: auto; }
+  .wrapper:after {
+    display: table;
+    clear: both;
+    content: ' '; }
+
+/**
+ * Mixin to set button styles.
+ *
+ */
+
+/*# sourceMappingURL=global.css.map */

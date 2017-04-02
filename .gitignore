@@ -1,0 +1,6 @@
+/node_modules
+/npm-debug.log
+/src/img/store
+/.sass-cache
+/dist/config
+/src/scss/globmaps/
