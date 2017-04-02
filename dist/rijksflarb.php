@@ -7,7 +7,13 @@ $term = 'love';
 //run the query
 $rQuery = new RijksQuery('en', $rijksKey, 'json');
 $search = $rQuery->setSearch($term);
-$result = $rQuery->artObject(1);
+
+
+//choose a random object
+$index = mt_rand(0, 100);
+
+$result = $rQuery->artObject($index);
+
 
 //parse the results
 $img      = $result['image'];
@@ -19,8 +25,3 @@ $savePath = $_SERVER["DOCUMENT_ROOT"] . $showPath;
 
 //save the file
 file_put_contents($savePath, file_get_contents($img));
-?>
-
-<img src="<?php echo $showPath; ?>" alt="<?php echo "Image about " . $term . " from the Rijksmuseum in Amsterdam." ?>">
-
-<caption><?php echo $title . " by " . $maker; ?></caption>

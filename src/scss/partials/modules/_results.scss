@@ -1,0 +1,25 @@
+.result {
+    display: flex;
+
+    .container--image{
+background: #999999;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container--title {
+        background: $primaryColour;
+    }
+
+    .title {
+        width:100%;
+        color: $quaternaryColour;
+        right: 0;
+        top: 0;
+        padding: 2rem;
+        display: inline-block;
+    }
+}

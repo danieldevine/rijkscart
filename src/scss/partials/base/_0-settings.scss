@@ -2,15 +2,7 @@
 $mobile-width:  480px;
 $tablet-width:  768px;
 $desktop-width: 1024px;
-$laptop-height: 768px;
-$laptop-width:  1366px;
 
-//fixed dimensions
-$maxWrapperWidth: 1170px;
-$bannerHeight: 6.6rem;
-$bannerScrolled: 4.15rem;
-$mobilebannerHeight: 3.125rem;
-$menuShift: 284px;
 
 
 //media query for small mobile
@@ -41,59 +33,19 @@ $menuShift: 284px;
   }
 }
 
-//height based query for laptops
-@mixin laptop {
-  @media (max-height: #{$laptop-height}) , (max-width: #{$laptop-width}) {
-    @content;
-  }
-}
-
-@mixin widescreen {
-  @media (min-width:1500px) {
-    @content;
-  }
-}
-
-/* target the ipad to fight against fixed position scroll weirdness */
-@mixin ipad {
-    @media only screen
-    and (min-device-width : 768px)
-    and (max-device-width : 1024px) {
-        @content;
-    }
-}
-
-@mixin wrapper-save {
-  @media (min-width: calc(#{$maxWrapperWidth} - 10px)) {
-    @content;
-  }
-}
-
 //main colours
-$primaryColour: #6bcdea;
-$secondaryColour: #444651;
+$primaryColour: #333333;
+$secondaryColour: #ffffff;
 $tertiaryColour: rgb(99, 168, 193);
 $quaternaryColour: #ffffff;
-$quinaryColour: #457688;
-$senaryColour: #63a8c1;
-$greyBg: rgb(237, 237, 243);
-$inputColour: #525268;
 
-//grid system
-$column-number:  12 !default;
-$gutters: 4% !default;
-
-$column-prefix: 'col-' !default;
-$md-column-prefix: 'md-col-' !default;
-$lg-column-prefix: 'lg-col-' !default;
 
 /*Typography*/
 @mixin base-fontsize {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,600,700|Roboto:700,900i');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300');
 
-$keyFont: 'Assistant', sans-serif;
-$titleFont: 'Roboto', sans-serif;
+$keyFont: 'Source Code Pro', monospace;
